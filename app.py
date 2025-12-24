@@ -7,7 +7,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 app = Flask(__name__, static_folder="static")
 
-DNAC_URL = "https://10.10.20.85"    # Cisco Sandbox URL
+DNAC_URL = "https://10.10.20.85"    # Cisco Sandbox URL accessible via Cisco AnyConnect VPN only
 
 
 # FRONTEND ROUTES
@@ -87,3 +87,4 @@ def license_summary():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
