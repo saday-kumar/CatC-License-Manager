@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Catalyst Center Token</title>
+  <link rel="stylesheet" href="/static/style_main.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Catalyst Center</h1>
+    <p>Generate Auth Token</p>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="generateToken()">Generate Token</button>
+
+    <div id="message"></div>
+
+    <button id="licenseBtn" onclick="goToLicense()" style="display:none;">
+      Fetch License Summary
+    </button>
+  </div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
